@@ -21,7 +21,7 @@ This repository bootstraps the work needed to achieve your SMART goals across **
 >    git add .
 >    git commit -m "chore: initial starter repo"
 >    git branch -M main
->    git remote add origin <YOUR_GITHUB_REPO_URL>
+>    git remote add origin https://github.com/AhmedRabi/Principal.git
 >    git push -u origin main
 >    ```
 >
