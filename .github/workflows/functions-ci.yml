@@ -1,0 +1,19 @@
+
+name: functions-ci
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+      - name: Restore & Build Functions
+        run: |
+          dotnet restore src/functions
+          dotnet build src/functions --configuration Release --no-restore

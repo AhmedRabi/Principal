@@ -1,0 +1,17 @@
+
+# Build
+bin/
+obj/
+/dist/
+/.vs/
+/.vscode/
+node_modules/
+.env
+appsettings.*.Secret.json
+
+# Logs
+*.log
+
+# Coverage
+coverage/
+
